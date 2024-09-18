@@ -3046,6 +3046,34 @@ input, select, textarea {
 			}
 
 		}
+		    /* General styling for the list and image */
+			.book-features {
+				margin-left: 0;
+				padding-left: 20px;
+				text-align: left;
+			}
+		
+			/* Media query for larger screens */
+			@media (min-width: 768px) {
+				.book-features {
+					margin-left: 350px; /* Shift the list to avoid the image */
+					padding-left: 0;    /* Avoid extra padding */
+				}
+		
+				.image.left {
+					float: left;
+					margin-right: 20px; /* Space between the image and text */
+				}
+			}
+		
+			/* Media query for small screens (mobiles) */
+			@media (max-width: 767px) {
+				.image.left {
+					float: none;
+					display: block;
+					margin: 0 auto 20px auto; /* Center image and add space below */
+				}
+			}
 
 		@media (max-width: 768px) {
 			ul {
@@ -3053,6 +3081,13 @@ input, select, textarea {
 			   padding-left: 20px;
 			}
 		 }
+
+		 @media (max-width: 768px) {
+			.image.left {
+				width: 100%;
+				margin-left: 0;
+			}
+		}
 
 		@media screen and (max-width: 736px) {
 
