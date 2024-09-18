@@ -2551,14 +2551,20 @@ input, select, textarea {
 			-ms-flex-direction: column;
 			flex-direction: column;
 			margin-left: 0;
+			display: flex;
+			flex-direction: column;
 		}
 
 			ul.actions.stacked li {
 				padding: 1.3em 0 0 0;
+				display: flex;
+				flex-direction: column;
 			}
 
 				ul.actions.stacked li:first-child {
 					padding-top: 0;
+					display: flex;
+					flex-direction: column;
 				}
 
 		ul.actions.fit {
@@ -2583,6 +2589,8 @@ input, select, textarea {
 
 			ul.actions.fit.stacked {
 				width: 100%;
+				display: flex;
+				flex-direction: column;
 			}
 
 		@media screen and (max-width: 480px) {
